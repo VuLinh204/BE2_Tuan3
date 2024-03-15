@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('form');
 })->name('form');
 
-Route::post('/form', function (Request $request) {
+Route::get('/form', function (Request $request) {
 })->middleware('checkuser')->name('form.submit');
 
 Route::get('/demo', function () {

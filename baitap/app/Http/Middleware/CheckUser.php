@@ -17,9 +17,9 @@ class CheckUser
     public function handle($request, Closure $next)
     {
         $name = $request->input('name');
-        $pass = $request->input('password');
+        $password = $request->input('password');
 
-        if ($name === 'admin' && $pass === '123') {
+        if ($name === 'admin' && $password === '123') {
             return redirect()->route('demo');
         }
 
